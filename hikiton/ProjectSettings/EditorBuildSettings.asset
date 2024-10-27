@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Sleeping_room.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Kitchen.unity
+    guid: fd6393ce407738f45825c143e89be909
+  - enabled: 1
+    path: Assets/Scenes/Sleeping_room-day2.unity
+    guid: eb66058a5b10dbc489cf8e6946068dd2
+  - enabled: 1
+    path: Assets/Scenes/Kitchen-day2.unity
+    guid: 50e29be8bcccc864cbadc5f239d0b67e
+  m_configObjects: {}
