@@ -22,6 +22,9 @@ public class AnimatorController : MonoBehaviour
 
 
     private bool isanimating = false;
+
+    public int what_day = 3;
+
     private void Start()
     {
 
