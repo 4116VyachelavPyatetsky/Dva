@@ -27,8 +27,10 @@ public class AnimatorController : MonoBehaviour
 
     private void Start()
     {
-        if (PlayerPrefs.GetInt(what_day, 0) == 0) // 0 Ч значение по умолчанию, если ключа нет
+        if (what_day == "day1" || (PlayerPrefs.GetInt(what_day, 0) == 0))// 0 Ч значение по умолчанию, если ключа нет
         {
+            Debug.Log(what_day);
+            Debug.Log(PlayerPrefs.GetInt(what_day));
             transform.GetComponent<Animator>().SetTrigger("Pereh");
             PlayerPrefs.SetInt(what_day, 1); // ”станавливаем, что диалог был показан
             PlayerPrefs.Save();
@@ -46,6 +48,7 @@ public class AnimatorController : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             if (text_shown) {
+                Debug.Log("huita");
                 transform.GetComponent<Animator>().SetTrigger("Pereh");
                 text_shown = false;
                 if (!Shown_start_message)

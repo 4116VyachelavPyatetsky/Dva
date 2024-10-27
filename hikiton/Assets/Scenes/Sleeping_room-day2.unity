@@ -10175,6 +10175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: {fileID: 8425005571976186401}
+  what_day: day2
 --- !u!114 &4923722240064592103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10294,7 +10295,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6294749835484011486
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10503,7 +10504,6 @@ GameObject:
   - component: {fileID: 2903197851984412143}
   - component: {fileID: 4921580140832649085}
   - component: {fileID: 6368314590349428921}
-  - component: {fileID: 8388674797205661279}
   - component: {fileID: 8388674797205661280}
   m_Layer: 5
   m_Name: Temn
@@ -10596,19 +10596,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7873095249231354766}
   m_CullTransparentMesh: 1
---- !u!114 &8388674797205661279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7873095249231354766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b69bacf77ce5fda4aa5228932e8f83c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  once: 1
 --- !u!82 &8388674797205661280
 AudioSource:
   m_ObjectHideFlags: 0

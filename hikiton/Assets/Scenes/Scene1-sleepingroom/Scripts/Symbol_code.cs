@@ -12,7 +12,6 @@ public class Symbol_code : MonoBehaviour
     public void AddSymbol(string str)
     {
         real_str = AddCharacter(real_str, str, 4);
-        Debug.Log(real_str);
         if (real_str == right_str) End();
     }
     void End()

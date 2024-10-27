@@ -1845,7 +1845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: {fileID: 3489237219964250240}
-  what_day: 3
+  what_day: day3-3
 --- !u!114 &59514810032994886
 MonoBehaviour:
   m_ObjectHideFlags: 0
