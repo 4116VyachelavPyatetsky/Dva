@@ -5,8 +5,9 @@ using UnityEngine.Windows;
 
 public class Symbol_code : MonoBehaviour
 {
-    private string right_str = "142314";
+    private string right_str = "2413";
     private string real_str = "";
+    public GameObject temn;
 
     public void AddSymbol(string str)
     {
@@ -15,7 +16,7 @@ public class Symbol_code : MonoBehaviour
     }
     void End()
     {
-        Debug.Log("Win");
+        temn.GetComponent<Scene_transition_scr>().FadeToLevel();
     }
 
     public static string AddCharacter(string input, string newChar, int maxLength)

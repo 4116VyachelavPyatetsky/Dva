@@ -28,7 +28,7 @@ public class InputParol : MonoBehaviour
             Debug.Log(InputText.text);
             Debug.Log(parol);
             Debug.Log(InputText.text == parol);
-            if (InputText.text == parol)
+            if (inputfield.text == parol)
             {
                 got_parol = true;
                 End();
