@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Sleeping_room-day3.unity
     guid: 249cc86d60d4f8547a08d8f096fe6def
+  - enabled: 1
+    path: Assets/Scenes/Kitchen-day3.unity
+    guid: b27787c2a58c2fb48be75404172beebb
+  - enabled: 1
+    path: Assets/Scenes/End.unity
+    guid: 3a1faab2b9a9a854a882ef75b107eb55
   m_configObjects: {}
