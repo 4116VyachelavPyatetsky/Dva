@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 using static UnityEngine.Rendering.DebugUI.Table;
 
 public class Pyatnaski_main : MonoBehaviour
@@ -71,6 +72,14 @@ public class Pyatnaski_main : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown("space"))
+        {
+            End();
+        }
+    }
+
     void Change_plitku(int row,int col,int num)
     {
         transform.GetChild(num).localPosition = new Vector3(size * (col - 1), size * -(row - 1), 0);
@@ -78,6 +87,9 @@ public class Pyatnaski_main : MonoBehaviour
 
     void End()
     {
+        PlayerPrefs.SetInt("key", 1);
+        PlayerPrefs.Save();
+        Debug.Log(PlayerPrefs.GetInt("key", 0));
         Instantiate(key, transform.parent);
         Scripte_for_min_znach.found_key_in_seif = true;
         seif.SetActive(false);
