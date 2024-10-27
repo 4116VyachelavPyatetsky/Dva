@@ -23,14 +23,15 @@ public class AnimatorController : MonoBehaviour
 
     private bool isanimating = false;
 
-    public int what_day = 3;
+    public string what_day = "";
 
     private void Start()
     {
-
-        if (!Shown_start_message)
+        if (PlayerPrefs.GetInt(what_day, 0) == 0) // 0 Ч значение по умолчанию, если ключа нет
         {
             transform.GetComponent<Animator>().SetTrigger("Pereh");
+            PlayerPrefs.SetInt(what_day, 1); // ”станавливаем, что диалог был показан
+            PlayerPrefs.Save();
         }
     }
 
