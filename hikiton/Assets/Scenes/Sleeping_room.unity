@@ -2706,7 +2706,7 @@ MonoBehaviour:
   secondVolume: 0.5
   secondPitch: 1
   secondLoop: 1
-  delay: 1.4
+  delay: 0
   fadeInDuration2: 4
 --- !u!1 &599927167
 GameObject:
