@@ -9540,6 +9540,7 @@ GameObject:
   - component: {fileID: 2903197851984412143}
   - component: {fileID: 4921580140832649085}
   - component: {fileID: 6368314590349428921}
+  - component: {fileID: 8388674797205661279}
   m_Layer: 5
   m_Name: Temn
   m_TagString: Untagged
@@ -9619,6 +9620,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7873095249231354766}
   m_CullTransparentMesh: 1
+--- !u!114 &8388674797205661279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7873095249231354766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b69bacf77ce5fda4aa5228932e8f83c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8425005571976186401
 MonoBehaviour:
   m_ObjectHideFlags: 0
