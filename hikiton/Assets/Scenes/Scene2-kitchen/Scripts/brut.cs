@@ -5,14 +5,14 @@ using UnityEngine;
 public class brut : MonoBehaviour
 {
     public bool once = true;
-    public static bool made = false;
     // Start is called before the first frame update
     void Start()
     {
-        if (once && !made)
+        if (once && !Scripte_for_min_znach.made)
         {
+            Debug.Log(Scripte_for_min_znach.made);
             transform.GetComponent<Animator>().SetTrigger("Pereh");
-            made = true;
+            Scripte_for_min_znach.made = true;
         }
         else { 
             transform.GetComponent<Animator>().SetTrigger("Pereh"); }
