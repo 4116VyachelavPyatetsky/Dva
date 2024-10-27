@@ -7,6 +7,11 @@ public class Is_key : MonoBehaviour
     public GameObject shkafchik;
     public void Proof_key()
     {
-        if (Scripte_for_min_znach.found_key_in_seif) shkafchik.SetActive(true);
+        if (PlayerPrefs.GetInt("key", 0) == 1) {
+            Debug.Log(PlayerPrefs.GetInt("key", 0));
+            shkafchik.SetActive(true);
+            PlayerPrefs.SetInt("key", 0);
+            PlayerPrefs.Save();
+        }
     }
 }
