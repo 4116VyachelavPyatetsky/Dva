@@ -64,6 +64,7 @@ public class AnimatorController : MonoBehaviour
         rightalphas = new float[message.text.Length].ToList();
         isanimating = true;
         StartCoroutine(Smooth(0));
+        transform.GetComponent<AudioSource>().Play();
     }
     private void Visble(bool visible)
     {
