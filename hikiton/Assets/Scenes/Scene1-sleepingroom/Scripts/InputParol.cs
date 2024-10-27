@@ -13,7 +13,7 @@ public class InputParol : MonoBehaviour
 
     private static bool got_parol = false;
 
-    string parol = "murder";
+    string parol = "murderer";
 
     public GameObject newMonitor;
 
